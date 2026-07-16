@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - Liberty Barber Shop | Moda & Estilo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                <img src="logo1.jpeg" alt="Liberty Mini" class="nav-logo-img">
+                <span>Liberty</span>
+            </a>
+        </div>
+
+        <div class="nav-actions">
+            <div class="nav-dropdown">
+                <button class="nav-btn-sm dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+                    Menú <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="index.html" class="dropdown-item"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="quienes-somos.html" class="dropdown-item"><i class="fa-solid fa-users"></i>Nosotros</a>
+                    <a href="galeria.html" class="dropdown-item"><i class="fa-solid fa-images"></i> Galería</a>
+                    <a href="servicios.html" class="dropdown-item"><i class="fa-solid fa-scissors"></i> Servicios</a>
+                    <a href="#faq" class="dropdown-item"><i class="fa-solid fa-circle-question"></i> Preguntas Frecuentes</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+   <!-- SECCIÓN DE GALERÍA (SLIDER PREMIUM) -->
+<section id="galeria" class="section-wrapper">
+    <h2 class="section-title">Nuestra Galería</h2>
+    
+    <div class="gallery-slider-container">
+        <!-- Contenedor del Slider (con soporte para tilt 3D en escritorio) -->
+        <div class="gallery-slider" data-tilt>
+            <div class="gallery-track">
+                
+                <!-- Imagen 1: Fachada -->
+                <div class="gallery-slide active">
+                    <div class="gallery-frame">
+                        <img src="fotos-galeria/fachadadia.jpeg" alt="Fachada de Liberty Barber Shop">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Exterior</span>
+                            <h3 class="gallery-item-title">La Fachada</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 2: Lavado de Cabello -->
+                <div class="gallery-slide">
+                    <div class="gallery-frame">
+                        <img src="fotos-galeria/lavadocabello.jpeg" alt="Zona de lavado de cabello en Liberty Barber Shop">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Confort</span>
+                            <h3 class="gallery-item-title">Zona de Lavado</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 3: Mueble y Coffee Bar -->
+                <div class="gallery-slide">
+                    <div class="gallery-frame">
+                        <img src="fotos-galeria/mueble.jpeg" alt="Área de bar y café para clientes">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Cortesía</span>
+                            <h3 class="gallery-item-title">Coffee & Drinks</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen 4: Panorama General -->
+                <div class="gallery-slide">
+                    <div class="gallery-frame">
+                        <img src="fotos-galeria/panorama.jpeg" alt="Estación premium de barbería en Liberty Barber Shop">
+                        <div class="gallery-overlay">
+                            <span class="gallery-tag">Premium</span>
+                            <h3 class="gallery-item-title">Estación Dorada</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Botones de Navegación (Estilo minimalista dorado) -->
+        <button class="slider-btn prev-btn" aria-label="Imagen anterior">&#10218;</button>
+        <button class="slider-btn next-btn" aria-label="Siguiente imagen">&#10219;</button>
+
+        <!-- Indicadores (Puntos en la parte inferior) -->
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+        </div>
+    </div>
+</section>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty Barber Shop - Moda & Estilo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fondo de partículas -->
+    <div class="luxury-particles" id="particles-container"></div>
+
+    <!-- 1. NUEVA BARRA DE NAVEGACIÓN COMPACTA (Sticky) -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="logo1.jpeg" alt="Liberty Mini" class="nav-logo-img">
+            <span>Liberty</span>
+        </div>            
+        <div class="nav-actions">
+            <!-- NUEVO MENÚ DESPLEGABLE -->
+            <div class="nav-dropdown">
+                <button class="nav-btn-sm dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+                    Menú <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="quienes-somos.html" class="dropdown-item"><i class="fa-solid fa-users"></i>Nosotros</a>
+                    <a href="galeria.html" class="dropdown-item"><i class="fa-solid fa-images"></i> Galería</a>
+                    <a href="servicios.html" class="dropdown-item"><i class="fa-solid fa-scissors"></i> Servicios</a>
+                    <a href="#faq" class="dropdown-item"><i class="fa-solid fa-circle-question"></i> Preguntas Frecuentes</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. SECCIÓN HERO: SPLIT-SCREEN (Contenido Izquierda / Galería Derecha) -->
+    <section class="hero-split">
+    <div class="hero-content">
+        <div class="brand-badge">💈 Moda & Estilo 💈</div>
+        <h1 class="hero-title">Liberty<br><span>Barber Shop</span></h1>
+        <p class="hero-subtitle">Pasión • Disciplina • Excelencia</p>
+        
+        <!-- El subtítulo de bienvenida ahora está dentro de la estructura -->
+        <h3 class="welcome-title">
+            Bienvenido, <br>
+            <span>tu mejor versión</span> <br>
+            comienza aquí...
+        </h3>
+    </div>
+</section>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="container">
+        <section class="section-wrapper story-section">
+            <div class="story-grid purpose-grid">
+                <div class="story-visual" data-tilt>
+                    <img src="fotoexterna.jpeg" alt="Fachada de Liberty Barber Shop" class="about-img-frame">
+                    <div class="visual-caption">La Fachada - Donde Comienza la Experiencia</div>
+                </div>
+
+                <div class="story-visual" data-tilt>
+                    <img src="fotointerna.jpeg" alt="interior de Liberty Barber Shop" class="about-img-frame">
+                    <div class="visual-caption">El lugar donde trabajamos en tu imagen</div>
+                </div>
+                <div class="story-content" data-tilt>
+                    <h2 class="content-title">Propósito</h2>
+    
+                    <p class="story-text">
+                    En Liberty Barbershop transformamos tu imagen con cortes profesionales, degradados impecables, coloración y diseños exclusivos. Cada detalle cuenta, por eso combinamos técnica, creatividad y pasión para ofrecer resultados que marcan la diferencia. No solo hacemos cortes, creamos estilo, confianza y personalidad. Tu mejor versión te espera en Liberty Barbershop.
+                    </p>
+                
+
+                     <!-- Frases de cierre destacadas y centradas -->
+                <span class="story-highlight">"Donde el estilo se convierte en confianza"</span>
+                <span class="story-highlight accent">¡Más que un corte, una transformación!</span>
+                </div>
+            </div>
+        </section>
+
+<section class="info-strip">
+    
+    <!-- Tarjeta de Horario (Se mantiene igual) -->
+    <div class="hero-schedule-box">
+                <h3 class="schedule-title">
+                    <i class="fa-regular fa-clock"></i> Nuestros Horarios
+                </h3>
+                <div class="schedule-table">
+                    <div class="schedule-row">
+                        <span class="schedule-days">Lunes a Jueves</span>
+                        <span class="schedule-hours">10:30 AM - 9:20 PM</span>
+                    </div>
+                    <div class="schedule-row">
+                        <span class="schedule-days">Viernes y Sábado</span>
+                        <span class="schedule-hours">10:00 AM - 9:45 PM</span>
+                    </div>
+                    <div class="schedule-row text-gold">
+                        <span class="schedule-days">Domingo</span>
+                        <span class="schedule-hours">10:30 AM - 4:30 PM</span>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- NUEVA Tarjeta de Ubicación con Mapa Integrado -->
+    <div class="info-strip-item map-card-item">
+        <div class="map-card-header">
+            <i class="fa-solid fa-location-dot gold-icon"></i>
+            <div>
+                <h4>Ubicación</h4>
+                <p>Av. San Carlos 1526, Puente Alto</p>
+            </div>
+        </div>
+        <div class="map-card-body">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.0416999607144!2d-70.5750849!3d-33.6042079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d744b25b64c1%3A0xe1db631a0e1cbcd4!2sAv.%20San%20Carlos%201526%2C%20Puente%20Alto%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1710000000000!5m2!1ses-419!2scl" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+    </section>
+    </div>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="servicios.html" target="_blank" class="wsp-float" title="Escríbenos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- FOOTER PREMIUM -->
+    <footer class="luxury-footer">
+        <div class="footer-content">
+            <img src="logo2.jpeg" alt="Logo Liberty" class="footer-logo-img">
+            <p class="footer-rights">&copy; 2026 Liberty Barber Shop. Todos los derechos reservados.</p>
+            <p class="dev-credits">Diseño exclusivo por Nivvux</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
