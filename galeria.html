@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,76 +36,158 @@
         </div>
     </nav>
 
-   <!-- SECCIÓN DE GALERÍA (SLIDER PREMIUM) -->
-<section id="galeria" class="section-wrapper" style="padding-top: 120px; margin-top: 20px;">
-    
-    <h2 class="section-title">Nuestra Galería</h2>
-    
-    <div class="gallery-slider-container">
-        <!-- Contenedor del Slider (con soporte para tilt 3D en escritorio) -->
-        <div class="gallery-slider" data-tilt>
-            <div class="gallery-track">
-                
-                <!-- Imagen 1: Fachada -->
-                <div class="gallery-slide active">
-                    <div class="gallery-frame">
-                        <img src="fachadadia.jpeg" alt="Fachada de Liberty Barber Shop">
-                        <div class="gallery-overlay">
-                            <span class="gallery-tag">Exterior</span>
-                            <h3 class="gallery-item-title">La Fachada</h3>
+    <!-- SECCIÓN DE GALERÍA 1: TRABAJOS Y CORTES -->
+    <section id="galeria" class="section-wrapper" style="padding-top: 120px; margin-top: 20px;">
+        <h2 class="section-title">Nuestros Trabajos</h2>
+        
+        <div class="gallery-slider-container">
+            <!-- Contenedor del Slider (con soporte para tilt 3D en escritorio) -->
+            <div class="gallery-slider" data-tilt>
+                <div class="gallery-track">
+                    
+                    <!-- Imagen 1 -->
+                    <div class="gallery-slide active">
+                        <div class="gallery-frame">
+                            <img src="foto1.jpeg" alt="Trabajo premium en Liberty Barber Shop">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Corte Premium</span>
+                                <h3 class="gallery-item-title">Estilo Clásico</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Imagen 2: Lavado de Cabello -->
-                <div class="gallery-slide">
-                    <div class="gallery-frame">
-                        <img src="lavadocabello.jpeg" alt="Zona de lavado de cabello en Liberty Barber Shop">
-                        <div class="gallery-overlay">
-                            <span class="gallery-tag">Confort</span>
-                            <h3 class="gallery-item-title">Zona de Lavado</h3>
+                    <!-- Imagen 2 -->
+                    <div class="gallery-slide">
+                        <div class="gallery-frame">
+                            <img src="foto2.jpeg" alt="Perfil detallado de barbería">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Detalle</span>
+                                <h3 class="gallery-item-title">Perfilado de Barba</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Imagen 3: Mueble y Coffee Bar -->
-                <div class="gallery-slide">
-                    <div class="gallery-frame">
-                        <img src="mueble.jpeg" alt="Área de bar y café para clientes">
-                        <div class="gallery-overlay">
-                            <span class="gallery-tag">Cortesía</span>
-                            <h3 class="gallery-item-title">Coffee & Drinks</h3>
+                    <!-- Imagen 3 -->
+                    <div class="gallery-slide">
+                        <div class="gallery-frame">
+                            <img src="foto3.jpeg" alt="Corte moderno en Liberty Barber Shop">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Tendencia</span>
+                                <h3 class="gallery-item-title">Fade Moderno</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Imagen 4: Panorama General -->
-                <div class="gallery-slide">
-                    <div class="gallery-frame">
-                        <img src="panorama.jpeg" alt="Estación premium de barbería en Liberty Barber Shop">
-                        <div class="gallery-overlay">
-                            <span class="gallery-tag">Premium</span>
-                            <h3 class="gallery-item-title">Estación Dorada</h3>
+                    <!-- Imagen 4 -->
+                    <div class="gallery-slide">
+                        <div class="gallery-frame">
+                            <img src="foto4.jpeg" alt="Tratamiento capilar">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cuidado</span>
+                                <h3 class="gallery-item-title">Diseño de Autor</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                    <!-- Imagen 5 -->
+                    <div class="gallery-slide">
+                        <div class="gallery-frame">
+                            <img src="foto5.jpeg" alt="Corte y peinado premium">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Acabado</span>
+                                <h3 class="gallery-item-title">Peinado Texturizado</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Botones de Navegación -->
+            <button class="slider-btn prev-btn" aria-label="Imagen anterior">&#10218;</button>
+            <button class="slider-btn next-btn" aria-label="Siguiente imagen">&#10219;</button>
+
+            <!-- Indicadores (Puntos en la parte inferior) -->
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
             </div>
         </div>
+    </section>
 
-        <!-- Botones de Navegación (Estilo minimalista dorado) -->
-        <button class="slider-btn prev-btn" aria-label="Imagen anterior">&#10218;</button>
-        <button class="slider-btn next-btn" aria-label="Siguiente imagen">&#10219;</button>
+    <!-- SECCIÓN DE GALERÍA 2: INSTALACIONES (Fachada, Lavado, Muebles) -->
+    <section id="galeria-instalaciones" class="section-wrapper" style="padding-top: 80px; margin-top: 20px;">
+        <h2 class="section-title">Nuestras Instalaciones</h2>
+        
+        <div class="gallery-slider-container">
+            <!-- Contenedor del Slider (con soporte para tilt 3D en escritorio) -->
+            <div class="gallery-slider" data-tilt>
+                <div class="gallery-track">
+                    
+                    <!-- Imagen 1: Fachada -->
+                    <div class="gallery-slide active">
+                        <div class="gallery-frame">
+                            <img src="fachadadia.jpeg" alt="Fachada de Liberty Barber Shop">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Exterior</span>
+                                <h3 class="gallery-item-title">La Fachada</h3>
+                            </div>
+                        </div>
+                    </div>
 
-        <!-- Indicadores (Puntos en la parte inferior) -->
-        <div class="slider-dots">
-            <span class="dot active" data-index="0"></span>
-            <span class="dot" data-index="1"></span>
-            <span class="dot" data-index="2"></span>
-            <span class="dot" data-index="3"></span>
+                    <!-- Imagen 2: Lavado de Cabello -->
+                    <div class="gallery-slide">
+                        <div class="gallery-frame">
+                            <img src="lavadocabello.jpeg" alt="Zona de lavado de cabello en Liberty Barber Shop">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Confort</span>
+                                <h3 class="gallery-item-title">Zona de Lavado</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 3: Mueble y Coffee Bar -->
+                    <div class="gallery-slide">
+                        <div class="gallery-frame">
+                            <img src="mueble.jpeg" alt="Área de bar y café para clientes">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Cortesía</span>
+                                <h3 class="gallery-item-title">Coffee & Drinks</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 4: Panorama General -->
+                    <div class="gallery-slide">
+                        <div class="gallery-frame">
+                            <img src="panorama.jpeg" alt="Estación premium de barbería en Liberty Barber Shop">
+                            <div class="gallery-overlay">
+                                <span class="gallery-tag">Premium</span>
+                                <h3 class="gallery-item-title">Estación Dorada</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Botones de Navegación -->
+            <button class="slider-btn prev-btn" aria-label="Imagen anterior">&#10218;</button>
+            <button class="slider-btn next-btn" aria-label="Siguiente imagen">&#10219;</button>
+
+            <!-- Indicadores (Puntos en la parte inferior) -->
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
     <script src="script.js" defer></script>
 </body>
 </html>
